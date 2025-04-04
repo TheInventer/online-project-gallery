@@ -11,13 +11,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand/Logo section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">My Portfolio</h3>
+            <h3 className="text-xl font-bold mb-4">Ajay Kumar Yadav</h3>
             <p className="text-gray-300 mb-4">
-              Showcasing my work and professional journey.
+              Software Engineer III at Uber
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/ajaykumaryada" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -26,7 +26,7 @@ const Footer = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/ajay-km-yadav/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -44,7 +44,7 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a 
-                href="mailto:contact@example.com" 
+                href="mailto:ajay.km85@gmail.com" 
                 aria-label="Email"
                 className="text-gray-300 hover:text-white transition-colors"
               >
@@ -84,18 +84,18 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
             <p className="text-gray-300">
-              Feel free to reach out if you're interested in working together.
+              Feel free to reach out if you're interested in connecting.
             </p>
             <p className="text-gray-300 mt-2">
-              <a href="mailto:contact@example.com" className="hover:text-white transition-colors">
-                contact@example.com
+              <a href="mailto:ajay.km85@gmail.com" className="hover:text-white transition-colors">
+                ajay.km85@gmail.com
               </a>
             </p>
           </div>
         </div>
         
         <div className="border-t border-blue-800 mt-8 pt-8 text-center text-gray-300">
-          <p>&copy; {currentYear} My Portfolio. All rights reserved.</p>
+          <p>&copy; {currentYear} Ajay Kumar Yadav. All rights reserved.</p>
         </div>
       </div>
     </footer>

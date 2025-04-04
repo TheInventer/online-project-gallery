@@ -8,11 +8,11 @@ const Hero = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         <div className="md:w-1/2 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-portfolio-blue">
-            Building Digital Experiences
+            Ajay Kumar Yadav
           </h1>
           <p className="text-xl text-portfolio-gray mb-8 max-w-xl">
-            Welcome to my portfolio. I'm a passionate web developer creating modern, 
-            responsive, and user-friendly websites.
+            Software Engineer III at Uber, building scalable cloud infrastructure and tools
+            for developer productivity. Passionate about creating robust, efficient solutions.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link 
@@ -34,8 +34,8 @@ const Hero = () => {
             <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-portfolio-blue/10"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500&h=500" 
-                alt="Portfolio illustration" 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&h=500" 
+                alt="Ajay Kumar Yadav" 
                 className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl"
               />
             </div>

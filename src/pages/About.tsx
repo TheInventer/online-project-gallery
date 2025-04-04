@@ -13,7 +13,7 @@ const About = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">About Me</h1>
             <p className="text-xl max-w-2xl mx-auto">
-              Get to know me, my background, and what drives my passion for web development.
+              Get to know me, my background, and what drives my passion for software development.
             </p>
           </div>
         </section>
@@ -27,27 +27,27 @@ const About = () => {
                 <div className="sticky top-24">
                   <div className="rounded-lg overflow-hidden mb-6 shadow-md">
                     <img 
-                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&h=1000" 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&h=1000" 
                       alt="Profile" 
                       className="w-full h-auto"
                     />
                   </div>
-                  <h2 className="text-2xl font-bold mb-4 text-portfolio-blue">Jane Doe</h2>
+                  <h2 className="text-2xl font-bold mb-4 text-portfolio-blue">Ajay Kumar Yadav</h2>
                   <p className="text-portfolio-gray mb-6">
-                    Web Developer & Designer
+                    Software Engineer III at Uber
                   </p>
                   <div className="flex flex-wrap gap-3 mb-6">
-                    <span className="bg-portfolio-lightGray text-portfolio-gray px-3 py-1 rounded-full text-sm">
-                      React
-                    </span>
                     <span className="bg-portfolio-lightGray text-portfolio-gray px-3 py-1 rounded-full text-sm">
                       JavaScript
                     </span>
                     <span className="bg-portfolio-lightGray text-portfolio-gray px-3 py-1 rounded-full text-sm">
-                      UI/UX
+                      React
                     </span>
                     <span className="bg-portfolio-lightGray text-portfolio-gray px-3 py-1 rounded-full text-sm">
                       Node.js
+                    </span>
+                    <span className="bg-portfolio-lightGray text-portfolio-gray px-3 py-1 rounded-full text-sm">
+                      TypeScript
                     </span>
                   </div>
                   
@@ -74,23 +74,12 @@ const About = () => {
                   <div className="space-y-8">
                     <div className="border-l-2 border-portfolio-blue/20 pl-6 relative">
                       <div className="absolute w-4 h-4 bg-portfolio-blue rounded-full -left-[9px] top-1"></div>
-                      <h4 className="text-xl font-bold mb-1">Master of Computer Science</h4>
-                      <p className="text-portfolio-gray mb-1">Stanford University</p>
-                      <p className="text-sm text-portfolio-gray mb-2">2018 - 2020</p>
-                      <p>
-                        Specialized in Human-Computer Interaction and Web Technologies.
-                        Thesis on responsive design patterns for cross-platform applications.
-                      </p>
-                    </div>
-                    
-                    <div className="border-l-2 border-portfolio-blue/20 pl-6 relative">
-                      <div className="absolute w-4 h-4 bg-portfolio-blue rounded-full -left-[9px] top-1"></div>
-                      <h4 className="text-xl font-bold mb-1">Bachelor of Science in Information Technology</h4>
-                      <p className="text-portfolio-gray mb-1">University of California</p>
+                      <h4 className="text-xl font-bold mb-1">Bachelor of Technology in Computer Science</h4>
+                      <p className="text-portfolio-gray mb-1">Institute of Engineering & Technology, Lucknow</p>
                       <p className="text-sm text-portfolio-gray mb-2">2014 - 2018</p>
                       <p>
-                        Graduated with honors. Focused on web development and UI/UX design principles.
-                        Active member of the Web Development Club.
+                        Graduated with distinction in Computer Science and Engineering.
+                        Focused on algorithm design, data structures, and software development.
                       </p>
                     </div>
                   </div>
@@ -107,35 +96,36 @@ const About = () => {
                   <div className="space-y-8">
                     <div className="border-l-2 border-portfolio-blue/20 pl-6 relative">
                       <div className="absolute w-4 h-4 bg-portfolio-blue rounded-full -left-[9px] top-1"></div>
-                      <h4 className="text-xl font-bold mb-1">Senior Frontend Developer</h4>
-                      <p className="text-portfolio-gray mb-1">Tech Innovations Inc.</p>
-                      <p className="text-sm text-portfolio-gray mb-2">Jan 2021 - Present</p>
+                      <h4 className="text-xl font-bold mb-1">Software Engineer III</h4>
+                      <p className="text-portfolio-gray mb-1">Uber</p>
+                      <p className="text-sm text-portfolio-gray mb-2">May, 2022 - Present</p>
                       <p>
-                        Lead the frontend development team in creating responsive, 
-                        user-friendly interfaces for enterprise applications. 
-                        Implemented modern React patterns and improved performance metrics by 40%.
+                        Working on the Cloud Engineering team, building and maintaining critical infrastructure
+                        that powers Uber's services. Implementing tools and services to enhance developer productivity
+                        and system reliability.
                       </p>
                     </div>
                     
                     <div className="border-l-2 border-portfolio-blue/20 pl-6 relative">
                       <div className="absolute w-4 h-4 bg-portfolio-blue rounded-full -left-[9px] top-1"></div>
-                      <h4 className="text-xl font-bold mb-1">Web Developer</h4>
-                      <p className="text-portfolio-gray mb-1">Digital Solutions Agency</p>
-                      <p className="text-sm text-portfolio-gray mb-2">Jun 2018 - Dec 2020</p>
+                      <h4 className="text-xl font-bold mb-1">Software Development Engineer II</h4>
+                      <p className="text-portfolio-gray mb-1">Amazon</p>
+                      <p className="text-sm text-portfolio-gray mb-2">May 2019 - Apr 2022</p>
                       <p>
-                        Developed websites and web applications for various clients across different industries.
-                        Worked with React, Node.js, and various CMS platforms to deliver custom solutions.
+                        Developed and maintained critical components of Amazon's marketplace platform.
+                        Lead the development of key features and services that improved customer experience
+                        and operational efficiency.
                       </p>
                     </div>
                     
                     <div className="border-l-2 border-portfolio-blue/20 pl-6 relative">
                       <div className="absolute w-4 h-4 bg-portfolio-blue rounded-full -left-[9px] top-1"></div>
-                      <h4 className="text-xl font-bold mb-1">Web Design Intern</h4>
-                      <p className="text-portfolio-gray mb-1">Creative Studios</p>
-                      <p className="text-sm text-portfolio-gray mb-2">May 2017 - Aug 2017</p>
+                      <h4 className="text-xl font-bold mb-1">Software Development Engineer</h4>
+                      <p className="text-portfolio-gray mb-1">Paytm</p>
+                      <p className="text-sm text-portfolio-gray mb-2">Jun 2018 - May 2019</p>
                       <p>
-                        Assisted the design team in creating website mockups and implementing them with HTML, CSS, and JavaScript.
-                        Collaborated with senior designers to improve user experience across multiple projects.
+                        Worked on Paytm's payment gateway systems, implementing robust solutions for online transactions.
+                        Contributed to scaling the platform to handle increased transaction volume and improved system stability.
                       </p>
                     </div>
                   </div>
@@ -146,37 +136,45 @@ const About = () => {
                     <span className="w-8 h-8 rounded-full bg-portfolio-blue/10 flex items-center justify-center text-portfolio-blue">
                       <Award size={18} />
                     </span>
-                    Awards & Achievements
+                    Skills & Expertise
                   </h3>
+                  
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+                    {['JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'Python', 'Java', 'Docker', 'Kubernetes', 'REST APIs', 'GraphQL', 'Microservices'].map((skill) => (
+                      <div 
+                        key={skill} 
+                        className="bg-portfolio-lightGray p-3 rounded-lg text-portfolio-gray flex items-center justify-center text-center"
+                      >
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
                   
                   <div className="space-y-6">
                     <div className="border-l-2 border-portfolio-blue/20 pl-6 relative">
                       <div className="absolute w-4 h-4 bg-portfolio-blue rounded-full -left-[9px] top-1"></div>
-                      <h4 className="text-xl font-bold mb-1">Best Website Design</h4>
-                      <p className="text-portfolio-gray mb-1">Web Design Annual Awards</p>
-                      <p className="text-sm text-portfolio-gray mb-2">2022</p>
+                      <h4 className="text-xl font-bold mb-1">Cloud Technologies</h4>
+                      <p className="text-portfolio-gray mb-2">AWS, GCP, Azure</p>
                       <p>
-                        Recognized for exceptional design and user experience in the e-commerce category.
+                        Extensive experience with cloud platforms and infrastructure as code.
                       </p>
                     </div>
                     
                     <div className="border-l-2 border-portfolio-blue/20 pl-6 relative">
                       <div className="absolute w-4 h-4 bg-portfolio-blue rounded-full -left-[9px] top-1"></div>
-                      <h4 className="text-xl font-bold mb-1">Innovation in Web Technology</h4>
-                      <p className="text-portfolio-gray mb-1">TechFest</p>
-                      <p className="text-sm text-portfolio-gray mb-2">2021</p>
+                      <h4 className="text-xl font-bold mb-1">Frontend Development</h4>
+                      <p className="text-portfolio-gray mb-2">React, Redux, HTML/CSS</p>
                       <p>
-                        Awarded for developing an innovative accessibility solution for web applications.
+                        Designing and implementing responsive, user-friendly interfaces for web applications.
                       </p>
                     </div>
                     
                     <div className="border-l-2 border-portfolio-blue/20 pl-6 relative">
                       <div className="absolute w-4 h-4 bg-portfolio-blue rounded-full -left-[9px] top-1"></div>
-                      <h4 className="text-xl font-bold mb-1">Hackathon Winner</h4>
-                      <p className="text-portfolio-gray mb-1">CodeCon</p>
-                      <p className="text-sm text-portfolio-gray mb-2">2019</p>
+                      <h4 className="text-xl font-bold mb-1">Backend Development</h4>
+                      <p className="text-portfolio-gray mb-2">Node.js, Java, Python</p>
                       <p>
-                        First place in a 48-hour hackathon, developing a web app for community resource sharing.
+                        Building scalable, efficient server-side applications and APIs.
                       </p>
                     </div>
                   </div>

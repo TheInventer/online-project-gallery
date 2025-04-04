@@ -4,50 +4,50 @@ import { Project } from '../components/ProjectCard';
 export const projectsData: Project[] = [
   {
     id: 1,
-    title: "E-commerce Website",
-    description: "A fully functional e-commerce platform built with React and Node.js, featuring product listings, cart functionality, and secure checkout.",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/ecommerce",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"]
+    title: "Cloud Infrastructure Platform",
+    description: "Developed a scalable cloud infrastructure platform that automates provisioning, deployment, and management of containerized applications across multiple cloud providers.",
+    imageUrl: "https://images.unsplash.com/photo-1560732488-6b0df240254a?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/cloud-platform",
+    tags: ["AWS", "Kubernetes", "Terraform", "Docker", "TypeScript"]
   },
   {
     id: 2,
-    title: "Personal Blog",
-    description: "A responsive blog website with content management system, comment functionality, and newsletter subscription.",
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/blog",
-    tags: ["Next.js", "Tailwind CSS", "Markdown", "Vercel"]
+    title: "Developer Productivity Toolkit",
+    description: "Built an internal toolkit that improved developer workflow and reduced deployment time by 40%, featuring CI/CD pipeline integration and automated testing.",
+    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/dev-toolkit",
+    tags: ["Node.js", "React", "GraphQL", "CI/CD", "Jest"]
   },
   {
     id: 3,
-    title: "Travel Agency Site",
-    description: "A modern travel agency website with travel package listings, booking system, and user accounts.",
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/travel",
-    tags: ["React", "Firebase", "Google Maps API"]
+    title: "Distributed Payment System",
+    description: "Designed and implemented a high-throughput payment processing system capable of handling thousands of transactions per second with fault tolerance and data consistency.",
+    imageUrl: "https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/payment-system",
+    tags: ["Java", "Microservices", "Kafka", "Redis", "MongoDB"]
   },
   {
     id: 4,
-    title: "Weather Dashboard",
-    description: "A weather dashboard that displays current and forecasted weather data for multiple locations.",
-    imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/weather",
-    tags: ["JavaScript", "OpenWeather API", "ChartJS"]
+    title: "Real-time Analytics Dashboard",
+    description: "Created a real-time data visualization dashboard that processes and displays key metrics from multiple data sources, enabling quick business decisions.",
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/analytics-dashboard",
+    tags: ["React", "D3.js", "Node.js", "WebSockets", "BigQuery"]
   },
   {
     id: 5,
-    title: "Fitness Tracker",
-    description: "A fitness tracking application allowing users to log workouts, track progress, and set fitness goals.",
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/fitness",
-    tags: ["React Native", "Firebase", "Redux"]
+    title: "API Gateway Service",
+    description: "Built a centralized API gateway that handles authentication, rate limiting, and request routing for a microservices architecture serving millions of requests per day.",
+    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/api-gateway",
+    tags: ["Node.js", "Express", "Redis", "JWT", "Load Balancing"]
   },
   {
     id: 6,
-    title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing my projects, skills, and professional experience.",
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/portfolio",
-    tags: ["React", "Tailwind CSS", "Framer Motion"]
+    title: "E-commerce Platform",
+    description: "Developed a scalable e-commerce platform with inventory management, payment processing, and real-time order tracking for a large retail client.",
+    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/ecommerce",
+    tags: ["React", "Node.js", "PostgreSQL", "Redux", "Stripe API"]
   }
 ];

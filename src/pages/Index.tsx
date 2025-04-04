@@ -17,7 +17,7 @@ const Index = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-portfolio-blue">My Skills</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {['HTML/CSS', 'JavaScript', 'React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'GraphQL', 'Redux', 'Next.js', 'Git', 'Figma'].map((skill) => (
+              {['JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'Python', 'Java', 'Docker', 'Kubernetes', 'REST APIs', 'GraphQL', 'Microservices'].map((skill) => (
                 <div 
                   key={skill} 
                   className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
@@ -34,10 +34,10 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
             <p className="text-xl max-w-2xl mx-auto mb-8">
-              I'm currently available for freelance work. If you have a project that you want to get started, feel free to reach out.
+              I'm interested in challenging opportunities where I can leverage my experience in cloud infrastructure and software development.
             </p>
             <a 
-              href="mailto:contact@example.com" 
+              href="mailto:ajay.km85@gmail.com" 
               className="bg-white text-portfolio-blue px-6 py-3 rounded-md font-medium transition-colors hover:bg-gray-100"
             >
               Get In Touch

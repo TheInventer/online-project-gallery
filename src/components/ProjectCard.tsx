@@ -36,16 +36,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         />
       </div>
       <div className="p-5">
-        <h3 className="text-xl font-bold mb-2 text-portfolio-dark">{project.title}</h3>
-        <p className="text-portfolio-dark/80 mb-4 line-clamp-3">{project.description}</p>
+        <h3 className="text-xl font-bold mb-2 text-portfolio-blue">{project.title}</h3>
+        <p className="text-portfolio-gray mb-4 line-clamp-3">{project.description}</p>
         
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tags.map((tag, index) => (
             <motion.span 
               key={index} 
-              className="text-xs bg-portfolio-cream text-portfolio-dark/70 px-2 py-1 rounded-full"
+              className="text-xs bg-blue-50 text-portfolio-gray px-2 py-1 rounded-full"
               whileHover={{ 
-                backgroundColor: "rgba(244, 162, 97, 0.2)",
+                backgroundColor: "rgba(59, 130, 246, 0.2)",
                 scale: 1.05
               }}
             >
@@ -56,7 +56,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         
         <div className="flex justify-between items-center">
           <motion.div whileHover={{ x: 3 }}>
-            <Link to={`/projects/${project.id}`} className="text-portfolio-orange hover:text-portfolio-orange/80 transition-colors">
+            <Link to={`/projects/${project.id}`} className="text-portfolio-lightBlue hover:text-portfolio-blue transition-colors">
               View Details
             </Link>
           </motion.div>
@@ -64,7 +64,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             href={project.projectUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-1 text-portfolio-orange hover:text-portfolio-orange/80 transition-colors"
+            className="flex items-center gap-1 text-portfolio-lightBlue hover:text-portfolio-blue transition-colors"
             whileHover={{ x: 3 }}
           >
             Visit Site <ExternalLink size={16} />

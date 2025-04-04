@@ -21,7 +21,7 @@ const Hero = () => {
   }, [currentIndex]);
 
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-portfolio-cream to-portfolio-cream/80">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-blue-100/80">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         <motion.div 
           className="md:w-1/2"
@@ -29,15 +29,15 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-portfolio-dark">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-portfolio-blue">
             Ajay Kumar Yadav
           </h1>
           <div className="h-8 mb-4">
-            <p className="text-xl text-portfolio-dark">
+            <p className="text-xl text-portfolio-gray">
               {text}<span className="animate-pulse">|</span>
             </p>
           </div>
-          <p className="text-xl text-portfolio-dark/80 mb-8 max-w-xl">
+          <p className="text-xl text-portfolio-gray mb-8 max-w-xl">
             Building scalable cloud infrastructure and tools for developer productivity. 
             Passionate about creating robust, efficient solutions.
           </p>
@@ -48,7 +48,7 @@ const Hero = () => {
             >
               <Link 
                 to="/projects" 
-                className="bg-portfolio-orange text-white flex items-center gap-2 px-4 py-2 rounded-md transition-colors hover:bg-portfolio-orange/90"
+                className="bg-portfolio-lightBlue text-white flex items-center gap-2 px-4 py-2 rounded-md transition-colors hover:bg-portfolio-blue"
               >
                 View My Work <ArrowRight size={16} />
               </Link>
@@ -59,7 +59,7 @@ const Hero = () => {
             >
               <Link 
                 to="/contact" 
-                className="border border-portfolio-orange text-portfolio-dark px-4 py-2 rounded-md transition-colors hover:bg-portfolio-orange/10"
+                className="border border-portfolio-lightBlue text-portfolio-blue px-4 py-2 rounded-md transition-colors hover:bg-blue-50"
               >
                 Get In Touch
               </Link>
@@ -73,14 +73,14 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-portfolio-orange/10"></div>
+            <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-portfolio-lightBlue/10"></div>
             <motion.div 
               className="absolute inset-0 flex items-center justify-center"
               animate={{ 
                 boxShadow: [
-                  "0 0 0 rgba(244, 162, 97, 0)",
-                  "0 0 20px rgba(244, 162, 97, 0.3)",
-                  "0 0 0 rgba(244, 162, 97, 0)"
+                  "0 0 0 rgba(59, 130, 246, 0)",
+                  "0 0 20px rgba(59, 130, 246, 0.3)",
+                  "0 0 0 rgba(59, 130, 246, 0)"
                 ]
               }}
               transition={{ duration: 2, repeat: Infinity }}

@@ -100,19 +100,19 @@
   }
 
   .section-heading {
-    @apply text-2xl font-bold mb-6 text-portfolio-dark;
+    @apply text-2xl font-bold mb-6 text-portfolio-blue;
   }
 
   .btn-primary {
-    @apply bg-portfolio-orange text-white px-4 py-2 rounded-md transition-colors hover:bg-portfolio-orange/90;
+    @apply bg-portfolio-lightBlue text-white px-4 py-2 rounded-md transition-colors hover:bg-portfolio-blue;
   }
 
   .header-link {
-    @apply text-portfolio-dark/80 hover:text-portfolio-orange transition-colors duration-200;
+    @apply text-portfolio-gray hover:text-portfolio-lightBlue transition-colors duration-200;
   }
 
   .animated-underline {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-portfolio-orange after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-portfolio-lightBlue after:transition-all after:duration-300 hover:after:w-full;
   }
 
   /* Animation classes */

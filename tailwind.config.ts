@@ -72,10 +72,6 @@ export default {
 					accent: '#6366F1',
 					gray: '#4B5563',
 					lightGray: '#F3F4F6',
-					// New Warm Modern theme colors
-					cream: '#FDF6E3',
-					dark: '#2F2E41',
-					orange: '#F4A261'
 				}
 			},
 			borderRadius: {
@@ -130,10 +126,10 @@ export default {
 				},
 				'pulse-shadow': {
 					'0%, 100%': {
-						boxShadow: '0 0 0 rgba(244, 162, 97, 0)'
+						boxShadow: '0 0 0 rgba(59, 130, 246, 0)'
 					},
 					'50%': {
-						boxShadow: '0 0 20px rgba(244, 162, 97, 0.3)'
+						boxShadow: '0 0 20px rgba(59, 130, 246, 0.3)'
 					}
 				}
 			},

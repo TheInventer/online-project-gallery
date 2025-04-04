@@ -35,7 +35,7 @@ const FeaturedProjects = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center mb-10">
           <motion.h2 
-            className="text-3xl font-bold text-portfolio-dark"
+            className="text-3xl font-bold text-portfolio-blue"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -46,7 +46,7 @@ const FeaturedProjects = () => {
             whileHover={{ scale: 1.05, x: 5 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link to="/projects" className="flex items-center gap-1 text-portfolio-orange hover:text-portfolio-orange/80 transition-colors">
+            <Link to="/projects" className="flex items-center gap-1 text-portfolio-lightBlue hover:text-portfolio-blue transition-colors">
               View All <ArrowRight size={16} />
             </Link>
           </motion.div>

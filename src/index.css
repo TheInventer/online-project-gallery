@@ -92,7 +92,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-portfolio-lightGray text-portfolio-blue font-inter;
   }
 
   .project-card {
@@ -104,15 +104,15 @@
   }
 
   .btn-primary {
-    @apply bg-portfolio-blue text-white px-4 py-2 rounded-md transition-colors hover:bg-portfolio-lightBlue;
+    @apply bg-portfolio-accent text-white px-4 py-2 rounded-md transition-colors hover:bg-opacity-90;
   }
 
   .header-link {
-    @apply text-portfolio-gray hover:text-portfolio-blue transition-colors duration-200;
+    @apply text-portfolio-gray hover:text-portfolio-accent transition-colors duration-200;
   }
 
   .animated-underline {
-    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-portfolio-blue after:transition-all after:duration-300 hover:after:w-full;
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-portfolio-accent after:transition-all after:duration-300 hover:after:w-full;
   }
 }
 

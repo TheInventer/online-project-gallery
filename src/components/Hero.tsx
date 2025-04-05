@@ -11,7 +11,7 @@ const Hero = () => {
             Ajay Kumar Yadav
           </h1>
           <p className="text-xl text-portfolio-gray mb-8 max-w-xl">
-            Software Engineer III at Uber, building scalable cloud infrastructure and tools
+            Senior Software Engineer, Microsoft, building scalable cloud infrastructure and tools
             for developer productivity. Passionate about creating robust, efficient solutions.
           </p>
           <div className="flex flex-wrap gap-4">
@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="w-72 h-72 md:w-96 md:h-96 rounded-full bg-portfolio-blue/10"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&h=500" 
+                src="../Ajayyadav.jpg" 
                 alt="Ajay Kumar Yadav" 
                 className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-xl"
               />

@@ -17,7 +17,10 @@ const Index = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8 text-portfolio-blue">My Skills</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {['JavaScript', 'TypeScript', 'React', 'Node.js', 'AWS', 'Python', 'Java', 'Docker', 'Kubernetes', 'REST APIs', 'GraphQL', 'Microservices'].map((skill) => (
+              {['Software Engineering', 'Artifical Intelligence', 'Machine Learning', 'Deep Learning', 'Distributed Systems', 
+              'Software Architecture', 'Containerization', 'Serverless', 'Kubernetes', 'REST APIs', 'GraphQL', 'Microservices',
+              'Java', 'Go Lang', '.Net Core', 'Team Management', 'Android', 'Elastic Search', 'Stream processing', 'Batch Processing'
+              , 'Operating Systems', 'Linux', 'Hypervisor', 'Redis', 'MongoDB', 'MySQL'].map((skill) => (
                 <div 
                   key={skill} 
                   className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
@@ -37,7 +40,7 @@ const Index = () => {
               I'm interested in challenging opportunities where I can leverage my experience in cloud infrastructure and software development.
             </p>
             <a 
-              href="mailto:ajay.km85@gmail.com" 
+              href="mailto:ajay.yadav109458@gmail.com@gmail.com" 
               className="bg-white text-portfolio-blue px-6 py-3 rounded-md font-medium transition-colors hover:bg-gray-100"
             >
               Get In Touch

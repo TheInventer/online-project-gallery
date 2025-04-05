@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Ajay Kumar Yadav</h3>
             <p className="text-gray-300 mb-4">
-              Software Engineer III at Uber
+              Senior Software Engineer Microsoft
             </p>
             <div className="flex space-x-4">
               <a 
@@ -44,7 +44,7 @@ const Footer = () => {
                 <Twitter size={20} />
               </a>
               <a 
-                href="mailto:ajay.km85@gmail.com" 
+                href="mailto:ajay.yadav109458@gmail.com" 
                 aria-label="Email"
                 className="text-gray-300 hover:text-white transition-colors"
               >
@@ -87,8 +87,8 @@ const Footer = () => {
               Feel free to reach out if you're interested in connecting.
             </p>
             <p className="text-gray-300 mt-2">
-              <a href="mailto:ajay.km85@gmail.com" className="hover:text-white transition-colors">
-                ajay.km85@gmail.com
+              <a href="mailto:ajay.yadav109458@gmail.com" className="hover:text-white transition-colors">
+                ajay.yadav109458@gmail.com
               </a>
             </p>
           </div>

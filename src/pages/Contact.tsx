@@ -67,7 +67,7 @@ const Contact = () => {
               <div>
                 <h2 className="text-2xl font-bold mb-6 text-portfolio-blue">Get In Touch</h2>
                 <p className="text-portfolio-gray mb-8">
-                  I'm interested in freelance opportunities – especially ambitious or large projects. 
+                  I'm interested in challenging opportunities – especially ambitious or large projects. 
                   However, if you have other requests or questions, don't hesitate to contact me.
                 </p>
                 
@@ -78,7 +78,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">Location</h3>
-                      <p className="text-portfolio-gray">San Francisco, CA</p>
+                      <p className="text-portfolio-gray">Rewari, Haryana</p>
                     </div>
                   </div>
                   
@@ -88,8 +88,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">Email</h3>
-                      <a href="mailto:contact@example.com" className="text-portfolio-blue hover:underline">
-                        contact@example.com
+                      <a href="mailto:ajay.yadav109458@gmail.com" className="text-portfolio-blue hover:underline">
+                        ajay.yadav109458@gmail.com
                       </a>
                     </div>
                   </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">Phone</h3>
-                      <p className="text-portfolio-gray">+1 (555) 123-4567</p>
+                      <p className="text-portfolio-gray">NA</p>
                     </div>
                   </div>
                 </div>

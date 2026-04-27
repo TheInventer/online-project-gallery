@@ -4,74 +4,82 @@ import { Project } from '../components/ProjectCard';
 export const projectsData: Project[] = [
   {
     id: 1,
-    title: "Cosmic - Containzerized Cloud Infrastructure Platform (Microsoft)",
-    description: "Developed a scalable Containerized cloud infrastructure platform that automates provisioning, deployment, and management of containerized applications across multiple instances of K8s platforms. Scale of 5000 K8s clusters, each cluster with 500 nodes.",
+    title: "Cosmic — Containerized Cloud Infrastructure Platform",
+    description: "Scalable containerized cloud infrastructure platform that automates provisioning, deployment, and management of containerized applications across 5,000 Kubernetes clusters, each with 500 nodes — 2.5M managed nodes at peak scale.",
     imageUrl: "https://images.unsplash.com/photo-1667372459470-5f61c93c6d3f?auto=format&fit=crop&w=800&q=80",
     projectUrl: "https://example.com/cloud-platform",
-    tags: ["Azure", "Kubernetes", "Kubernetes Agents", "Docker", "Golang", "SDN", "Deployment Infrastructure", "Graphana", "Azure Log Analytics"]
+    tags: ["Microsoft", "Azure", "Kubernetes", "Kubernetes Agents", "Docker", "Golang", "SDN", "Grafana", "Azure Log Analytics"]
   },
   {
     id: 2,
-    title: "Azure Sovereign Clouds (Microsoft)",
-    description: "Built entire Azure Sovereign Clouds infrastructure for France, Germany, and Singapore. This includes building the entire infrastructure from scratch, including the deployment of 1000s of servers, networking, and storage. I have primarily worked on DNS services which were 20+ services.",
-    imageUrl: "https://images.unsplash.com/photo-1560732488-6b0df240254a?auto=format&fit=crop&w=800&q=80",
+    title: "Azure Sovereign Clouds — France, Germany & Singapore",
+    description: "Built entire Azure Sovereign Cloud infrastructure for three nations from scratch — thousands of servers, full networking, and 20+ DNS services handling 900B+ DNS queries per day at peak.",
+    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
     projectUrl: "https://example.com/dev-toolkit",
-    tags: ["Buildout Orcestration Platform", "DNS Services", ".Net Core", "Cosmos DB", "Scalable Architecture", "Azure", "Kubernetes"]
+    tags: ["Microsoft", "DNS Services", "Azure DNS", ".Net Core", "Cosmos DB", "Buildout Orchestration", "Kubernetes", "Scalable Architecture"]
   },
   {
     id: 3,
-    title: "Events Android App (University of Texas, Austin, USA)",
-    description: "Designed and implemented android app as social event discovery platform designed to help users find and participate in local events, connect with like-minded people, and stay informed with real-time updates. It allows users to create events, RSVP, browse through upcoming events, and engage with event organizers and attendees. With features like event recommendations, push notifications, and profile management, the app ensures an enriched and interactive experience for discovering local culture and events.",
-    imageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/payment-system",
-    tags: ["Java", "Android", "Firebase Database", "Authentication", "Firebase Cloud Messaging", "Google Maps API", "Event Discovery"]
+    title: "Azure DNS — 900B Queries/day at Sovereign Scale",
+    description: "Designed and operated 20+ Azure DNS services as core infrastructure for France, Germany, and Singapore sovereign clouds — processing over 900 billion DNS queries per day with five-nines availability.",
+    imageUrl: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/azure-dns",
+    tags: ["Microsoft", "DNS", "Azure", ".NET Core", "High Availability", "Sovereign Cloud", "Distributed Systems"]
   },
   {
     id: 4,
-    title: "Cosmic - Real-time Analytics Dashboard (Microsoft)",
-    description: "Created a real-time data visualization dashboard that processes and displays key metrics from multiple data sources, enabling quick business decisions.",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/analytics-dashboard",
-    tags: ["Azure", "Azure Log Analytics", "Kubernetes", "Grafana", "Data Visualization", "Real-time Analytics"]
+    title: "Google Cloud Infrastructure",
+    description: "Building next-generation scalable cloud infrastructure at Google as Staff Software Engineer, applying distributed systems expertise to Google-scale problems in cloud computing and infrastructure reliability.",
+    imageUrl: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/google-cloud",
+    tags: ["Google", "Google Cloud", "Cloud Infrastructure", "Distributed Systems", "Scalability", "Site Reliability"]
   },
   {
     id: 5,
-    title: "API Gateway Service",
-    description: "Built a centralized API gateway that handles authentication, rate limiting, and request routing for a microservices architecture serving millions of requests per day.",
-    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/api-gateway",
-    tags: ["Node.js", "Express", "Redis", "JWT", "Load Balancing"]
+    title: "Events Android App",
+    description: "Social event discovery platform helping users find and participate in local events with real-time updates, event recommendations, push notifications, and profile management. Built as part of M.S. coursework at UT Austin.",
+    imageUrl: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/payment-system",
+    tags: ["UT Austin", "Java", "Android", "Firebase", "Google Maps API", "Firebase Cloud Messaging", "Event Discovery"]
   },
   {
-    id: 6, 
-    title: "2D Game in Unity (IIT Delhi)",
-    description: "Developed a 2D game using Unity, featuring engaging gameplay mechanics, character animations, and a scoring system.",
-    imageUrl: "https://images.unsplash.com/photo-1587573089283-f14c65841f75?auto=format&fit=crop&w=800&q=80",
-    projectUrl: "https://example.com/ecommerce",
-    tags: ["Unity", "C#", "Game Development", "2D Graphics", "Animation"]
+    id: 6,
+    title: "Cosmic — Real-time Analytics Dashboard",
+    description: "Real-time data visualization dashboard that processes and displays key metrics from 5,000+ Kubernetes clusters, enabling instant operational decisions across Microsoft's containerized cloud infrastructure.",
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/analytics-dashboard",
+    tags: ["Microsoft", "Grafana", "Azure Log Analytics", "Kubernetes", "Data Visualization", "Real-time Analytics"]
   },
   {
     id: 7,
+    title: "2D Game in Unity",
+    description: "2D platformer game developed in Unity featuring engaging gameplay mechanics, character animations, physics-based movement, and a progressive scoring system. Built during M.Tech coursework.",
+    imageUrl: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=800&q=80",
+    projectUrl: "https://example.com/ecommerce",
+    tags: ["IIT Delhi", "Unity", "C#", "Game Development", "2D Graphics", "Physics Engine", "Animation"]
+  },
+  {
+    id: 8,
     title: "Distributed Payment System",
-    description: "Designed and implemented a high-throughput payment processing system capable of handling thousands of transactions per second with fault tolerance and data consistency.",
-    imageUrl: "https://images.unsplash.com/photo-1580048915913-4f8f5cb481c4?auto=format&fit=crop&w=800&q=80",
+    description: "High-throughput payment processing system capable of handling thousands of transactions per second with fault tolerance, distributed consensus, and strong data consistency guarantees.",
+    imageUrl: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80",
     projectUrl: "https://example.com/payment-system",
-    tags: ["Java", "Microservices", "Kafka", "Redis", "MongoDB"]
+    tags: ["NIT Kurukshetra", "Java", "Microservices", "Kafka", "Redis", "MongoDB", "Distributed Systems"]
   },
   {
-    id: 8, 
-    title: "Developed a FTP Server (IIT Delhi)",
-    description: "Developed a FTP server that handles file transfers, user authentication, and directory management, ensuring secure and efficient file sharing.",
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    id: 9,
+    title: "FTP Server from Scratch",
+    description: "Full-featured FTP server implementing the RFC 959 protocol with file transfer, user authentication, passive/active mode support, and multi-threaded directory management for concurrent clients.",
+    imageUrl: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
     projectUrl: "https://example.com/ecommerce",
-    tags: ["C", "Socket Programming", "HTTP Protocol", "Multi-threading", "File Handling"]
+    tags: ["IIT Delhi", "C", "Socket Programming", "FTP Protocol", "Multi-threading", "File Systems"]
   },
   {
-    id: 9, 
-    title: "Developed a complier in Java (IIT Delhi)",
-    description: "Developed a compiler that translates high-level code into machine code, optimizing for performance and memory usage.",
-    imageUrl: "https://images.unsplash.com/photo-1669023414180-4dcf35d943e1?auto=format&fit=crop&w=800&q=80",
+    id: 10,
+    title: "Compiler in Java",
+    description: "Full compiler pipeline from lexical analysis through code generation — tokenizer, recursive descent parser, semantic analyzer, and bytecode emitter targeting a custom instruction set. Built for the Compilers course.",
+    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
     projectUrl: "https://example.com/ecommerce",
-    tags: ["Java", "Compiler Design", "Lexical Analysis", "Syntax Analysis", "Code Optimization"]
+    tags: ["IIT Delhi", "Java", "Compiler Design", "Lexical Analysis", "Syntax Analysis", "Code Generation"]
   },
 ];

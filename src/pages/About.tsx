@@ -328,8 +328,8 @@ const About = () => {
               transition={{ delay: 0.2, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               style={{ color: '#8892A4', fontSize: '1.0625rem', maxWidth: '520px', margin: '0 auto' }}
             >
-              From NIT Kurukshetra to Google cloud infrastructure —
-              a story of systems, scale, and perpetual growth.
+              Building Google Cloud Infrastructure —
+              a story of distributed systems, scale, and perpetual growth.
             </motion.p>
           </div>
         </section>

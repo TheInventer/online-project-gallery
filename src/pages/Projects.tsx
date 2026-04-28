@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import FloatingNav from '@/components/FloatingNav';
 import Footer from '../components/Footer';
-import { projectsData } from '../data/projects';
+import { projectsData, personalProjectsData } from '../data/projects';
 import { useInView } from '@/hooks/useInView';
 import { pageVariants } from '@/animations';
 import { ArrowUpRight, Filter } from 'lucide-react';
@@ -138,10 +138,121 @@ function OrbitalProjectCard({ project, index }: { project: typeof projectsData[0
   );
 }
 
+// ─── Personal Project Card ────────────────────────────────
+function PersonalProjectCard({ project, index }: { project: typeof personalProjectsData[0]; index: number }) {
+  const [ref, inView] = useInView<HTMLDivElement>({ threshold: 0.1, once: true });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 32 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 32 }}
+      transition={{ delay: index * 0.1, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+    >
+      <div
+        className="group relative rounded-2xl overflow-hidden"
+        style={{
+          background: 'var(--color-ink)',
+          border: '1px solid rgba(245,166,35,0.15)',
+          transition: 'border-color 0.35s, box-shadow 0.35s, transform 0.35s',
+        }}
+        onMouseEnter={(e) => {
+          (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(245,166,35,0.4)';
+          (e.currentTarget as HTMLDivElement).style.boxShadow = '0 20px 56px rgba(0,0,0,0.5), 0 0 0 1px rgba(245,166,35,0.1)';
+          (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-5px)';
+        }}
+        onMouseLeave={(e) => {
+          (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(245,166,35,0.15)';
+          (e.currentTarget as HTMLDivElement).style.boxShadow = 'none';
+          (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
+        }}
+      >
+        <div className="relative overflow-hidden" style={{ height: '200px' }}>
+          <img
+            src={project.imageUrl}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(13,20,33,1) 0%, rgba(13,20,33,0.4) 60%, transparent 100%)' }} />
+          <div className="absolute top-3 left-3">
+            <span
+              className="px-2.5 py-1 rounded-lg text-xs font-medium"
+              style={{ background: 'rgba(245,166,35,0.75)', backdropFilter: 'blur(8px)', color: '#0D1421', fontFamily: 'Geist Mono, monospace', fontWeight: 700 }}
+            >
+              Personal
+            </span>
+          </div>
+          {project.projectUrl && project.projectUrl !== '/' && (
+            <a
+              href={project.projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-3 right-3 w-8 h-8 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0"
+              style={{ background: 'rgba(245,166,35,0.2)', backdropFilter: 'blur(8px)', border: '1px solid rgba(245,166,35,0.3)' }}
+            >
+              <ArrowUpRight size={14} style={{ color: '#F5A623' }} />
+            </a>
+          )}
+        </div>
+
+        <div className="p-5">
+          <h3
+            style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontWeight: 700, fontSize: '1rem', color: '#E8EAED', letterSpacing: '-0.01em', lineHeight: 1.35, marginBottom: '8px' }}
+            className="line-clamp-1"
+          >
+            {project.title.split(' — ')[0]}
+          </h3>
+          <p className="text-sm line-clamp-2 mb-4" style={{ color: '#8892A4', lineHeight: 1.6 }}>
+            {project.description}
+          </p>
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {project.tags.slice(0, 3).map((tag) => (
+              <span
+                key={tag}
+                className="px-2.5 py-1 rounded-lg text-xs"
+                style={{ background: 'rgba(245,166,35,0.06)', border: '1px solid rgba(245,166,35,0.15)', color: '#8892A4', fontFamily: 'Geist Mono, monospace' }}
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+          <a
+            href={project.projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 w-full justify-center py-2.5 rounded-xl text-sm font-semibold transition-all duration-200"
+            style={{
+              background: 'rgba(245,166,35,0.1)',
+              border: '1px solid rgba(245,166,35,0.3)',
+              color: '#F5A623',
+              fontFamily: 'Geist Mono, monospace',
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(245,166,35,0.2)';
+              (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(245,166,35,0.5)';
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(245,166,35,0.1)';
+              (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(245,166,35,0.3)';
+            }}
+          >
+            {project.projectUrl.replace('https://', '')} <ArrowUpRight size={14} />
+          </a>
+        </div>
+
+        <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+          style={{ background: 'linear-gradient(105deg, transparent 40%, rgba(245,166,35,0.03) 50%, transparent 60%)' }}
+        />
+      </div>
+    </motion.div>
+  );
+}
+
 // ─── Projects Page ────────────────────────────────────────
 const Projects = () => {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
   const [bannerRef, bannerInView] = useInView<HTMLElement>({ threshold: 0.1 });
+  const [personalRef, personalInView] = useInView<HTMLElement>({ threshold: 0.1 });
 
   const allTags = Array.from(new Set(projectsData.flatMap((p) => p.tags))).sort();
   const filteredProjects = selectedTag
@@ -272,6 +383,45 @@ const Projects = () => {
                 </motion.div>
               )}
             </AnimatePresence>
+          </div>
+        </section>
+
+        {/* Personal / Vibe-coded Projects */}
+        <section
+          ref={personalRef}
+          className="section-pad"
+          style={{ background: 'var(--color-ink)', borderTop: '1px solid rgba(255,255,255,0.05)' }}
+        >
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={personalInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="mb-10"
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <span
+                  className="px-2.5 py-1 rounded-lg text-xs font-bold"
+                  style={{ background: 'rgba(245,166,35,0.12)', border: '1px solid rgba(245,166,35,0.3)', color: '#F5A623', fontFamily: 'Geist Mono, monospace', letterSpacing: '0.06em', textTransform: 'uppercase' }}
+                >
+                  Personal
+                </span>
+              </div>
+              <h2
+                style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 'clamp(1.5rem, 3vw, 2.25rem)', fontWeight: 800, letterSpacing: '-0.03em', color: '#E8EAED', lineHeight: 1.15, marginBottom: '0.75rem' }}
+              >
+                Side projects & <span style={{ color: '#F5A623' }}>vibe-coded</span> experiments
+              </h2>
+              <p style={{ color: '#8892A4', fontSize: '1rem', maxWidth: '480px' }}>
+                Built for fun, curiosity, or just because — outside of work and university.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {personalProjectsData.map((project, i) => (
+                <PersonalProjectCard key={project.id} project={project} index={i} />
+              ))}
+            </div>
           </div>
         </section>
       </main>
